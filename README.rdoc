@@ -1,28 +1,16 @@
-== README
+This app allows a user to sign up into a credit card payment varified account by combining devise with stripe.
+The web app will send a confirmation email on signup by using SendGrid on heroku.
+They can then upload images to their account.
+The images are restricted to 5mb.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using the fog and carrierwave gem, an AWS account s3 bucket may be used to upload images to the cloud
+(requires configuration of S3 keys).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Noteable Gems used:
+- gem 'devise'
+- gem 'twitter-bootstrap-rails'
+- gem 'devise-bootstrap-views'
+- gem 'stripe'
+- gem 'carrierwave'
+- gem 'mini_magick'
+- gem 'fog'
